@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopy Spot Furniture</title>
+    <!-- tab loco -->
+    <link rel="shortcut icon" type="image" href="./images/logo.png">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+  <!-- top navbar -->
+  <div class="top-navbar">
+    <div class="top-icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+ 
+    <div class="waviy">
+      <span style="--i:1"><b style="color:red;">F</b></span>
+      <span style="--i:2">U</span>
+      <span style="--i:3">R</span>
+      <span style="--i:4">N</span>
+      <span style="--i:5">I</span>
+      <span style="--i:6">T</span>
+      <span style="--i:7">U</span>
+      <span style="--i:8">R</span>
+      <span style="--i:8">E</span>
+     </div>
+
+    
+    <div class="other-links">
+        <button id="btn-login"><a href="login.html">Login</a></button>
+        <button id="btn-signup"><a href="signup.html">Sign up</a></button>
+        
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+  </div>
+  <!-- top navbar -->
+
+  <!-- main navbar -->
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg" id="navbar-color">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#" id="logo" ><img src="./images/logo.png " alt="" width="30px" style="margin-bottom: 10px; "> <b style="color:red; font-size: 30px;">S</b>HOPY <b style="color:red; font-size: 30px;">S</b>POT</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span><i><img src="./images/menu.png" alt="" width="30px"></i></span>
+        </button>
+        
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Category</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="Roomtable.html" class="dropdown-item" style="color: black;">Dining Room Table</a>
+                <a href="outdoor.html" class="dropdown-item" style="color: black;">Outdoor Chair</a>
+                <a href="br.html" class="dropdown-item" style="color: black;">Bed Room Furniture</a>
+                <a href="kc.html" class="dropdown-item" style="color: black;">Kitchen Cupboards</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" >Contact</a>
+            </li>
+          </ul>
+          <div class="search_box" style="margin-left: 30px;">
+            <input type="search" placeholder="Search for anything...">
+            <span class="fa fa-search"></span>
+          </div>
+        </div>
+      </div> 
+    </nav>
+  </div>
+  <!-- main navbar -->
+  
+  <!-- login -->
+  <div class="container login">
+    <div class="row">
+      <div class="col-md-4" id="side1">
+        <h3>Hello Friend!</h3>
+        <p>Create New Account</p>
+        <div id="btn"><a href="signup.html">Sign up</a></div>
+      </div>
+      
+      <div class="col-md-8" id="side2">
+        <h3 style="font-weight: bolder;">Login Account</h3>
+        <div class="inp">
+          <input type="text" placeholder="User Name" required>
+          <input type="text" placeholder="Password" required>
+        </div>
+        <p>Forgot Your Password</p>
+        <div class="icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div id="login"><button>LOG IN</button></div>
+      </div>
+    </div>
+  </div>
+  <!-- login -->
+
+  <!-- offer -->
+  <div class="container" id="offer" style="margin-top: 80px;">
+    <div class="row">
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h5>Free Shipping</h5>
+        <p>On order over ₹10000</p>
+      </div>
+      
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-truck"></i>
+        <h5>Fast Delivery</h5>
+        <p>World wide</p>
+      </div>
+      
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <h5>Big Choice</h5>
+        <p>Of product</p>
+      </div>
+      
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fab fa-whatsapp-square"></i>
+        <h5>Whatsapp Support</h5>
+        <p>24/7</p>
+      </div>
+    </div>
+  </div>
+  <!-- offer -->
+
+  <!-- footer -->
+  <footer id="footer" style="margin-top: 80px;">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-content">
+            <div class="waviydown">
+              <span style="--i:1"><b style="color:red;">S</b></span>
+              <span style="--i:2">H</span>
+              <span style="--i:3">O</span>
+              <span style="--i:4">P</span>
+              <span style="--i:5">Y</span>
+              <span style="--i:6"><b style="color:red; padding-left: 12px;">S</b></span>
+              <span style="--i:7">P</span>
+              <span style="--i:8">O</span>
+              <span style="--i:8">T</span>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, hic?</p>
+              <p style="font-weight: bold;">
+                  Indumathi <br>
+                  Fullstack Developer <br>
+                  INDIA <br>
+              </p>
+
+              <strong><i class="fas fa-phone"></i> Phone: <strong>+91 9876543210</strong></strong><br>
+              <strong><i class="fa-solid fa-envelope"></i> Email: <strong>example@gmail.com</strong></strong>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>USEFULL LINKS</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="product.html">products</a></li>
+              <li><a href="#">Privacy policay</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>OUR SERVICES</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, rem!</p>
+            <ul>
+              <li><a href="#">Custom menus</a></li>
+              <li><a href="#">Smartest Way</a></li>
+              <li><a href="#">User Friendly</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>OUR SOCIAL NETWORK</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ad?</p>
+            <div class="socail-links mt-3">
+              <a href="#" class="twiiter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="twiiter"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="twiiter"><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="twiiter"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong>Furniture</strong>.All Rights Reserved
+      </div>
+      
+      <div class="credits">
+        Designed By <a href="#" style="color: white; font-size: 15px; letter-spacing: 1px; font-weight: bold;">INDUMATHI.S</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <!-- uparrow -->
+  <a href="#" class="arrow"><i><img src="./images/uparrow.png" alt="" width="50px"></i></a>
+  <!-- uparrow -->
+
+  
+</body>
+</html>
