@@ -10,6 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
+    <!-- AOS Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -121,7 +124,7 @@
 
        <!-- card3 -->
   <div class="container" style="margin-top: 100px;">
-    <h3 class="text-center" style="margin-top: 50px; font-weight: bolder;">Types Of Kitchen Cupboards</h3>
+    <h3  data-aos="flip-right" data-aos-duration="2000" class="text-center" style="margin-top: 50px; font-weight: bolder;">Types Of Kitchen Cupboards</h3>
     <hr id="hr" style="width: 100px; height: 0.7px; margin-left: 500px; background-color: rgb(250, 72, 72);">
     <div class="row" style="margin-top: 50px;">
       <div class="col-md-3 py-3 py-md-0">
@@ -330,5 +333,19 @@
       <!-- uparrow -->
       <a href="#" class="arrow"><i><img src="./images/uparrow.png" alt="" width="50px"></i></a>
       <!-- uparrow -->
+
+      <!-- jquery  -->
+      <script>
+        $(document).ready(function(){
+          $(".container #btn3").click(function(){
+            alert ("Sorry for the inconvenience! it's just a model website");
+          })
+        })
+        </script>
+    <!-- AOS -->
+    <script>
+      AOS.init();
+    </script>
+    
 </body>
 </html>

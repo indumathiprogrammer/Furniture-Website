@@ -13,6 +13,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
+    <!-- AOS link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -98,7 +101,8 @@
 
   <!-- contact -->
   <div class="container" id="contact">
-    <h1 class="text-center">CONTACT US</h1>
+    <h1 data-aos="zoom-out-up" data-aos-duration="2000" class="text-center">CONTACT US</h1>
+    <hr id="hr" style="width: 100px; height: 0.7px; margin-left: 500px; background-color: rgb(250, 72, 72);">
     <div class="row" style="margin-top: 50px;">
         <div class="col-md-4 py-3 py-md-0">
             <div class="card">
@@ -250,6 +254,19 @@
   <!-- uparrow -->
   <a href="#" class="arrow"><i><img src="./images/uparrow.png" alt="" width="50px"></i></a>
   <!-- uparrow -->
+
+  <!-- jquery  -->
+  <script>
+    $(document).ready(function(){
+      $(".container #messagebtn").click(function(){
+        alert ("Sorry for the inconvenience! it's just a model website");
+      })
+    })
+    </script>
     
+    <!-- AOS -->
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
